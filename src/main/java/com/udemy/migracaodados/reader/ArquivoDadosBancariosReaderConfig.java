@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.FileSystemResource;
 
 import com.udemy.migracaodados.dominio.DadosBancarios;
-import com.udemy.migracaodados.dominio.Pessoa;
 
 @Configuration
 public class ArquivoDadosBancariosReaderConfig {
