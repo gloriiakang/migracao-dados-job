@@ -23,7 +23,7 @@ public class BancoPessooaWriterConfig {
 			@Qualifier("appDataSource") DataSource dataSource) {
 		return new JdbcBatchItemWriterBuilder<Pessoa>()
 			.dataSource(dataSource)
-			.sql("INSERT INTO dados_bancarios (id, nome, email, data_nascimento, idade) VALUES (?, ?, ?, ?, ?)")
+			.sql("INSERT INTO pessoa (id, nome, email, data_nascimento, idade) VALUES (?, ?, ?, ?, ?)")
 			.itemPreparedStatementSetter(itemPreparedStatementSetter())
 			.build();
 		}
